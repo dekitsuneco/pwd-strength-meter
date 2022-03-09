@@ -1,3 +1,8 @@
+:root {
+  --strength: 0%;
+  --bgc: rgb(242, 97, 97);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -48,11 +53,12 @@
   display: block;
 
   height: 100%;
-  width: 95px;
+  width: var(--strength);
   max-width: 100%;
 
 
   background-color: rgb(148,97,242);
+  background-color: var(--bgc);
 
   border-radius: 30px;
 }
@@ -73,5 +79,7 @@
 }
 
 .pwd-meter__verdict {
+  line-height: 1.2rem;
   color: rgba(225,205,255, .7);
+  text-align: center;
 }
