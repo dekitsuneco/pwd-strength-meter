@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 3rem 0 0 0;
+
+
+  background-color: rgb(33,5,81);
+}
+
+.pwd-meter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pwd-meter__title {
+  margin-bottom: 1rem;
+
+
+  color: rgb(225,205,255);
+  text-align: center;
+}
+
+.pwd-meter__meter-bar {
+  height: 2rem;
+  min-width: 85%;
+
+  margin-bottom: .6rem;
+
+
+  border-radius: 30px;
+  border: 1px solid rgb(103,56,195);
+}
+
+.pwd-meter__meter-bar::before {
+  content: '';
+
+  display: block;
+
+  height: 100%;
+  width: 95px;
+  max-width: 100%;
+
+
+  background-color: rgb(148,97,242);
+
+  border-radius: 30px;
+}
+
+.pwd-meter__pwd {
+  min-width: 85%;
+
+  margin-bottom: .3rem;
+  padding: .2rem 0;
+
+
+  background-color: rgb(47,8,118);
+  color: white;
+  text-align: center;
+
+  border-radius: 5px;
+  border: 2px groove rgba(103,56,195,.7);
+}
+
+.pwd-meter__verdict {
+  color: rgba(225,205,255, .7);
+}
