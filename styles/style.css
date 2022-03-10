@@ -61,6 +61,8 @@
   background-color: var(--bgc);
 
   border-radius: 30px;
+
+  transition: all .3s linear;
 }
 
 .pwd-meter__pwd {
